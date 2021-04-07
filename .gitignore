@@ -1,0 +1,13 @@
+# Elisp .gitignore from github
+*.elc
+.cask
+*~
+*.~undo-tree
+
+#elpa
+elpa/
+
+# 
+.*
+session.*
+tmp*
