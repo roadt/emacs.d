@@ -19,6 +19,8 @@
 (package-initialize)
 (unless package-archive-contents (package-refresh-contents nil))
 
+
+
 (defun file-content (filePath)
   "Return filePath's file content."
   (with-temp-buffer
@@ -34,7 +36,11 @@
      )))) 
 
 (defun installed-package-names ()
-  (mapcar 'car (package-alist))
+  (mapcar 'car package-alist))
+
+
+(defun available-package-names ()
+  (mapcar 'car package-archive-contents))
 
 (defun tt-store-package-names()
   " store current installed packages into configure file   ~/.emacs.d/pkgnames"
@@ -52,12 +58,19 @@
 
 (defun tt-ensure-packages-installed ()
   "ensure packages installed, if not,  install them "
+  (interactive)
   (setq pkgns  (tt-read-package-names))
+  (setq pkgns-avail (available-package-names))
   (dolist (pkgn pkgns)
     (unless (package-installed-p pkgn)
-      (print (format "Installing %s" pkgn))
-      (package-install pkgn))
-))
+      (if (member pkgn pkgns-avail)
+	  (progn 
+	    (print (format "Installing %s" pkgn))
+            (package-install pkgn)
+	    )
+	(print (format "Not finding %s" pkgn))
+	)
+)))
 
 (tt-ensure-packages-installed)
 

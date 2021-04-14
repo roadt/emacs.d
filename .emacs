@@ -1,7 +1,6 @@
 
 ;;;; Load emacs.d stuff
-(add-to-list 'load-path "~/.emacs.d/")
-(load-library "init-elpa")   ;;; Initialized all need packages
+(load-file "~/.emacs.d/init-elpa.el")   ;;; Initialized all need packages
 
 
 
