@@ -132,6 +132,10 @@
   (interactive "*p")
   (jpk/delete-instead-of-kill (kill-line arg)))
 
+(defun jpk/backward-delete-word (arg)
+  "Like `backward-kill-world', but does not save to the `kill-ring'."
+  (interactive "*p")
+  (jpk/delete-instead-of-kill (backward-kill-word arg)))
 
 ;;
 ;;  delete word  (not yank)
