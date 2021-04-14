@@ -29,6 +29,8 @@
 
 
 
+;;=============  Buffer  ========
+
 (require 'grep)
 (defvar grep-buffer-args nil
   "grep-buffer's default argument, stored lastest argument")
@@ -60,10 +62,7 @@
 )
 
 
-
-;;;
-;;;
-;;;
+;;  create *scratcth* buffer
 (defun create-scratch-buffer nil
    "create a scratch buffer"
    (interactive)
@@ -90,6 +89,19 @@
 ))
 
 
+;; kill buffers except current one
+(defun kill-other-buffers ()
+  "Kill all other buffers"
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+;; kill all buffers 
+(defun kill-all-buffers ()
+  "Kill all buffers"
+  (interactive)
+  (mapc 'kill-buffer (buffer-list)))
+
+
 
 ;;
 ;; change current buffer's name to first version name.
@@ -113,7 +125,6 @@
 
 
 ;;;  
-
 (defmacro jpk/delete-instead-of-kill (&rest body)
   "Replaces `kill-region' with `delete-region' in BODY."
   `(cl-letf (((symbol-function 'kill-region)
