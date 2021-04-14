@@ -112,5 +112,33 @@
 
 
 
+;;;  
 
+(defmacro jpk/delete-instead-of-kill (&rest body)
+  "Replaces `kill-region' with `delete-region' in BODY."
+  `(cl-letf (((symbol-function 'kill-region)
+              (lambda (beg end &optional yank-handler)
+                (delete-region beg end))))
+     ,@body))
+
+(defun jpk/delete-word (arg)
+  "Like `kill-word', but does not save to the `kill-ring'."
+  (interactive "*p")
+  (jpk/delete-instead-of-kill (kill-word arg)))
+
+
+(defun jpk/delete-line (arg)
+  "Like `kill-line', but does not save to the `kill-ring'."
+  (interactive "*p")
+  (jpk/delete-instead-of-kill (kill-line arg)))
+
+
+;;
+;;  delete word  (not yank)
+;;
+(defun delete-word (arg)
+  "Delete characters backward until encountering the beginning of a word.
+With argument ARG, do this that many times."
+  (interactive "p")
+  (delete-region (point) (progn (forward-word arg) (point))))
 

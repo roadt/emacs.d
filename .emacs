@@ -23,7 +23,7 @@
 (load-library "tidy.el")
 (load-library "misc.el")
 (load-library "taskwarrior.el")
-(load-library "workgroups")
+;;(load-library "workgroups")
 
 (load-library "ruby-mode")
 (load-library "flymake")
@@ -122,16 +122,6 @@
 ;;          '(lambda ()
 ;;             (inf-ruby-keys)
 ;;	     ))
-(setq elpa-tuna
-   (quote
-    (("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-     ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-     ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/"))))
-(setq elpa-local
-   (quote
-    (("gnu" . "file:///mnt/ssd2/elpa/gnu/")
-     ("melpa" . "file:///mnt/ssd2/elpa/melpa/")
-     ("org" . "file:///mnt/ssd2/elpa/org/"))))
 
 
 ;;;
@@ -221,8 +211,8 @@
  '(package-archives
    (quote
     (("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-     ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-     ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/"))))
+     ("melpa" . " http://elpa.emacs-china.org/melpa/")
+     ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org"))
  '(package-enable-at-startup t)
  '(package-selected-packages
    '(kivy-mode auctex ansible-vault ansible ansible-doc indium pallet cask-package-toolset caskxy cask-mode cask fm-bookmarks ob-mongo restclient-test elcord github-stars github-search github-explorer inf-clojure inf-crystal inf-ruby inf-mongo ibuffer-git ibuffer-project ibuffer-projectile ibuffer-vc ox-mediawiki mediawiki proc-net nginx-mode netease-music network-watch gnomenm eshell-bookmark autobookmarks 4clojure php-eldoc eldoc-eval php-boris magit-gitflow helm-phpunit lsp-go lsp-haskell lsp-php lsp-python lsp-rust lsp-typescript lsp-ui lsp-vue geiser cider elpy js-comint company-anaconda company-ansible company-auctex company-axiom company-bibtex company-box company-c-headers company-cabal company-childframe company-coq company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-ghc company-ghci company-glsl company-go company-irony-c-headers company-jedi company-lean company-lsp company-lua company-nand2tetris company-nginx company-ngram company-nixos-options company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-suggest company-tern company-terraform company-try-hard company-ycm company-ycmd aws-snippets clojure-snippets common-lisp-snippets django-snippets el-autoyas elixir-yasnippets elm-mode elm-yasnippets go-playground go-snippets haskell-snippets java-snippets mocha-snippets php-auto-yasnippets r-autoyas react-snippets vala-snippets yasnippet-classic-snippets julia-mode haxe-imports mingus download-region flycheck-kotlin flycheck kotlin-mode achievements multiple-cursors helm-rails helm-rb company-php jdee bicycle helm-dictionary keymap-utils emaps buffer-watcher graphql-mode sudo-ext dired-toggle-sudo auto-sudoedit counsel-tramp ibuffer-tramp composer emms-player-mpv emms-player-simple-mpv emms-bilibili ob-ipython symon avandu elf-mode elfeed-goodies elfeed-org elfeed-protocol elfeed-web gnus-x-gm-raw hexo json-navigator dsvn magit-svn eimp number elisp-docstring-mode elisp-format elisp-lint elisp-refs elisp-sandbox workgroups weibo w3 typing-game tumble ttrss tree-mode travis top-mode todochiku timer-revert stem ssh show-marks seethru ruby-tools ruby-refactor ruby-guard ruby-end ruby-compilation ruby-block redis rebox2 quack python3-info python-info python popup-complete parenface pacmacs org-if openwith omniref nose newlisp-mode mongo memory-usage matrix-client marmalade-client kite-mini karma jsx-mode jst jss jquery-doc jinja2-mode jenkins-watch jasminejs-mode jabber-otr ipython inf-php inf-groovy helm-xcdoc helm-rubygems-org helm-rubygems-local helm-css-scss haxe-mode groovy-mode go-scratch gitlab gitignore-mode github-notifier github-issues github-clone github-browse-file gist gimme geben furl fold-dwim flymake-cursor flymake fireplace find-things-fast find-temp-file find-file-in-repository find-file-in-project feature-mode erlang eredis ensime emojify emacsshot emacsql-sqlite emacsql-psql emacsql-mysql emacs-eclim elwm elscreen-persist elnode elmine elixir-mode elixir-mix el-spec ecb drupal-mode dockerfile-mode docker-api docker docean docbook dired-open diffview dictionary dictcc dict-tree desktop-registry desktop+ dart-mode cssh crosshairs company-inf-ruby company-arduino coffee-mode cmake-mode clocker cljdoc clippy clang-format chm-view chinese-yasdcv camcorder c-eldoc bts-github bongo autotetris-mode autotest auto-yasnippet auto-compile audio-notes-mode arview aria2 apache-mode anything angularjs-mode angular-snippets angular-mode android-mode alert ack-menu ack ac-js2 ac-inf-ruby ac-html-bootstrap ac-html ac-clang 2048-game))
@@ -414,6 +404,11 @@
 ;; projectile
 ;(global-set-key (kbd "C-x C-f") 'projectile-find-file)
 
+;; misc
+(global-set-key (kbd "s-d") 'delete-word)
+(global-set-key (kbd  "s-k") 'jpk/delete-line)
+
+
 ;;
 (ansi-color-for-comint-mode-on)
 
@@ -497,4 +492,4 @@
 (openwith-mode)
 
 
-(workgroups-mode 1)
+;;(workgroups-mode 1)
