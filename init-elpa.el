@@ -2,10 +2,34 @@
 
 ;; initialize package mangement sysystem
 
-(setq package-archives    (quote
+(setq elpa-default
+   (quote
+    (("gnu" . "https://elpa.gnu.org/packages/")
+     ("melpa" . "https://melpa.org/packages/")
+     ("org" . "https://orgmode.org/elpa/"))))
+
+(setq elpa-tuna
+   (quote
     (("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
      ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+     ("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
      ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/"))))
+
+(setq elpa-china
+   (quote
+    (("gnu" . "http://elpa.emacs-china.org/gnu")
+     ("melpa" . " http://elpa.emacs-china.org/melpa/")
+     ("marmalade" . " 	http://elpa.emacs-china.org/marmalade/")
+     ("org" . "http://elpa.emacs-china.org/org"))))
+
+(setq elpa-local
+   (quote
+    (("gnu" . "file:///mnt/ssd2/elpa/gnu/")
+     ("melpa" . "file:///mnt/ssd2/elpa/melpa/")
+     ("org" . "file:///mnt/ssd2/elpa/org/"))))
+
+
+(setq package-archives    elpa-tuna)
 
 ;;(add-to-list 'package-archives             '("melpa" . "https://melpa.org/packages/") t)
 ;;(when (< emacs-major-version 24)
@@ -47,7 +71,7 @@
   (interactive)
   (with-temp-file  "~/.emacs.d/pkgnames"
     (insert (with-output-to-string
-      (princ (installed-package-names))))
+      (princ (sort (installed-package-names) 'string<)))) 
     )
 )
 
