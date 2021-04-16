@@ -70,7 +70,6 @@
  company-irony-c-headers
  company-lean
  company-lua
- company-nand2tetris
  company-ngram
  company-nixos-options
  company-plsense
@@ -267,7 +266,6 @@
  mocha-snippets
  mongo
  names
- nand2tetris
  network-watch
  newlisp-mode
  nginx-mode
@@ -318,7 +316,6 @@
  request-deferred
  restclient
  restclient-test
- revive
  ruby-block
  ruby-compilation
  ruby-end
