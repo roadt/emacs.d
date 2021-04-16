@@ -15,12 +15,20 @@
      ("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
      ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/"))))
 
+(setq elpa-ustc
+   (quote
+    (("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
+     ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
+     ("marmalade" . "https://mirrors.ustc.edu.cn/elpa/marmalade/")
+     ("org" . "https://mirrors.ustc.edu.cn/elpa/org/"))))
+
+
 (setq elpa-china
    (quote
-    (("gnu" . "http://elpa.emacs-china.org/gnu")
+    (("gnu" . "http://elpa.emacs-china.org/gnu/")
      ("melpa" . " http://elpa.emacs-china.org/melpa/")
-     ("marmalade" . " 	http://elpa.emacs-china.org/marmalade/")
-     ("org" . "http://elpa.emacs-china.org/org"))))
+     ("marmalade" . "http://elpa.emacs-china.org/marmalade/")
+     ("org" . "http://elpa.emacs-china.org/org/"))))
 
 (setq elpa-local
    (quote
@@ -28,8 +36,7 @@
      ("melpa" . "file:///mnt/ssd2/elpa/melpa/")
      ("org" . "file:///mnt/ssd2/elpa/org/"))))
 
-
-(setq package-archives    elpa-tuna)
+(setq package-archives    elpa-ustc)
 
 ;;(add-to-list 'package-archives             '("melpa" . "https://melpa.org/packages/") t)
 ;;(when (< emacs-major-version 24)
