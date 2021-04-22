@@ -80,21 +80,18 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector
-	 ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
+   ["#2e3436" "#a40000" "#4e9a06" "#c4a000" "#204a87" "#5c3566" "#729fcf" "#eeeeec"])
  '(async-bytecomp-package-mode t)
- '(auto-save-file-name-transforms
-	 '(("\\`/[^/]*:\\([^/]*/\\)*\\([^/]*\\)\\'" "/tmp/\\2" t)
-		 ("(.*)" "~/.emacs.d/autosave/\\1" nil)))
+ '(auto-save-file-name-transforms '(("(.*)" "~/.emacs.d/autosave/\\1" nil)))
  '(backup-directory-alist '((".*" . "~/.emacs.d/backup")))
  '(browse-url-browser-function 'w3m-browse-url)
  '(clocker-mode nil)
  '(coffee-tab-width 2)
  '(column-number-mode t)
+ '(create-lockfiles nil)
  '(custom-enabled-themes nil)
  '(debug-on-error t)
  '(electric-indent-mode nil)
- '(elfeed-feeds
-	 '("https://zz.urown.cloud:11200/telegram/blog.rss" "http://www.oschina.net/news/rss" "http://www.infoq.com/feed/java" "https://projects.apache.org/feeds/rss.xml" "http://www.w3.org/blog/news/feed/atom" "https://doub.loan/feed/" "http://feed.williamlong.info/" "https://www.python.org/dev/peps/peps.rss" "https://www.archlinux.org/feeds/news/" "https://www.ruby-lang.org/en/feeds/news.rss" "https://www.ruby-lang.org/en/documentation/" "http://feed.cnblogs.com/blog/u/22886/rss" "https://cnodejs.org/rss" "http://www.infoq.com/feed?token=qMxGY7GbQwvhQ6z2MyLtMLGrk3hCMWyZ" "http://www.infoq.com/cn/feed?token=qMxGY7GbQwvhQ6z2MyLtMLGrk3hCMWyZ" "http://s" "https://linuxtoy.org/feeds/all.atom.xml") t)
  '(emms-bilibili-mid 10195618)
  '(emms-player-list '(mplayer mpv simple))
  '(enable-local-variables :all)
@@ -122,12 +119,12 @@
  '(inf-clojure-program "/usr/bin/clj")
  '(inf-mongo-command "/usr/bin/mongo 127.0.0.1:27017")
  '(inf-ruby-implementations
-	 '(("ruby" . "/usr/local/rvm/bin/rvm default do irb --prompt default --noreadline -r irb/completion")
-		 ("jruby" . "jruby -S irb --prompt default --noreadline -r irb/completion")
-		 ("rubinius" . "rbx -r irb/completion")
-		 ("yarv" . "irb1.9 -r irb/completion")
-		 ("macruby" . "macirb -r irb/completion")
-		 ("pry" . "pry")))
+   '(("ruby" . "/usr/local/rvm/bin/rvm default do irb --prompt default --noreadline -r irb/completion")
+     ("jruby" . "jruby -S irb --prompt default --noreadline -r irb/completion")
+     ("rubinius" . "rbx -r irb/completion")
+     ("yarv" . "irb1.9 -r irb/completion")
+     ("macruby" . "macirb -r irb/completion")
+     ("pry" . "pry")))
  '(inferior-js-program-command "node --interactive")
  '(inferior-lisp-program "/usr/bin/clisp")
  '(js-indent-level 2)
@@ -137,36 +134,34 @@
  '(max-lisp-eval-depth 4096)
  '(max-specpdl-size 4096)
  '(mingus-bookmarks
-	 '(("C"
-			(file "8ﾄ-Call Of Duty:MW3.mp3" position 7))
-		 ("4{"
-			(file "^1G-4{.mp3" position 198))))
+   '(("C"
+      (file "8ﾄ-Call Of Duty:MW3.mp3" position 7))
+     ("4{"
+      (file "^1G-4{.mp3" position 198))))
  '(mingus-mpd-host "venus")
  '(mu-worlds
-	 '(["mdev" "localhost" 4000 "roadt" "password1234"]
-		 ["eot" "eotmud.com" 4000 "" ""]))
+   '(["mdev" "localhost" 4000 "roadt" "password1234"]
+     ["eot" "eotmud.com" 4000 "" ""]))
  '(nxhtml-autoload-web nil t)
  '(openwith-associations
-	 '(("\\.pdf\\'" "acroread"
-			(file))
-		 ("\\.\\(mp3\\|ogg\\)\\'" "mplayer"
-			(file))
-		 ("\\.\\(?:mpe?g\\|avi\\|wmv\\|mkv\\|mp4\\|rm\\|rmvb\\|part\\|f4v\\|flv\\|mov\\)\\'" "mpv"
-			(file))
-		 ("\\.\\(?:gif\\)\\'" "display"
-			(file))))
+   '(("\\.pdf\\'" "acroread"
+      (file))
+     ("\\.\\(mp3\\|ogg\\)\\'" "mplayer"
+      (file))
+     ("\\.\\(?:mpe?g\\|avi\\|wmv\\|mkv\\|mp4\\|rm\\|rmvb\\|part\\|f4v\\|flv\\|mov\\)\\'" "mpv"
+      (file))
+     ("\\.\\(?:gif\\)\\'" "display"
+      (file))))
  '(openwith-mode t)
  '(org-trello-current-prefix-keybinding "C-c o")
  '(package-archives
-	 '(("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
-		 ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-		 ("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
-		 ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")))
+   '(("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
+     ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+     ("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
+     ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")))
  '(package-enable-at-startup t)
  '(package-selected-packages
-	 '(podcaster aurel impatient-showdown lispy flymd kivy-mode auctex ansible-vault ansible ansible-doc indium pallet cask-package-toolset caskxy cask-mode fm-bookmarks ob-mongo restclient-test elcord github-stars github-search github-explorer inf-clojure inf-crystal inf-ruby inf-mongo ibuffer-git ibuffer-project ibuffer-projectile ibuffer-vc ox-mediawiki mediawiki proc-net nginx-mode netease-music network-watch gnomenm eshell-bookmark autobookmarks 4clojure php-eldoc eldoc-eval php-boris magit-gitflow helm-phpunit lsp-go lsp-haskell lsp-php lsp-python lsp-rust lsp-typescript lsp-ui lsp-vue geiser cider elpy js-comint company-anaconda company-ansible company-auctex company-axiom company-bibtex company-box company-c-headers company-cabal company-childframe company-coq company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-ghc company-ghci company-glsl company-go company-irony-c-headers company-jedi company-lean company-lsp company-lua company-nand2tetris company-nginx company-ngram company-nixos-options company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-suggest company-tern company-terraform company-try-hard company-ycm company-ycmd aws-snippets clojure-snippets common-lisp-snippets django-snippets el-autoyas elixir-yasnippets elm-mode elm-yasnippets go-playground go-snippets haskell-snippets java-snippets mocha-snippets php-auto-yasnippets r-autoyas react-snippets vala-snippets yasnippet-classic-snippets julia-mode haxe-imports mingus download-region flycheck-kotlin flycheck kotlin-mode achievements multiple-cursors helm-rails helm-rb company-php jdee bicycle helm-dictionary keymap-utils emaps buffer-watcher graphql-mode sudo-ext dired-toggle-sudo auto-sudoedit counsel-tramp ibuffer-tramp composer emms-player-mpv emms-player-simple-mpv emms-bilibili ob-ipython symon avandu elf-mode elfeed-goodies elfeed-org elfeed-protocol elfeed-web gnus-x-gm-raw hexo json-navigator dsvn magit-svn eimp number elisp-docstring-mode elisp-format elisp-lint elisp-refs elisp-sandbox workgroups weibo typing-game tumble ttrss tree-mode travis top-mode todochiku timer-revert stem ssh show-marks seethru ruby-tools ruby-refactor ruby-guard ruby-end ruby-compilation ruby-block redis rebox2 quack python3-info python-info python popup-complete parenface pacmacs org-if openwith omniref nose newlisp-mode mongo memory-usage matrix-client marmalade-client kite-mini karma jsx-mode jst jss jquery-doc jinja2-mode jenkins-watch jasminejs-mode jabber-otr ipython inf-php inf-groovy helm-xcdoc helm-rubygems-org helm-rubygems-local helm-css-scss haxe-mode groovy-mode go-scratch gitlab gitignore-mode github-notifier github-issues github-clone github-browse-file gist gimme geben furl fold-dwim flymake-cursor flymake fireplace find-things-fast find-temp-file find-file-in-repository find-file-in-project feature-mode erlang eredis ensime emojify emacsshot emacsql-sqlite emacsql-psql emacsql-mysql emacs-eclim elwm elscreen-persist elnode elmine elixir-mode elixir-mix el-spec ecb drupal-mode dockerfile-mode docker-api docker docean docbook dired-open diffview dictionary dictcc dict-tree desktop-registry desktop+ dart-mode cssh crosshairs company-inf-ruby company-arduino coffee-mode cmake-mode clocker cljdoc clippy clang-format chm-view chinese-yasdcv camcorder c-eldoc bts-github bongo autotetris-mode autotest auto-yasnippet auto-compile audio-notes-mode arview aria2 apache-mode anything angularjs-mode angular-snippets angular-mode android-mode alert ack-menu ack ac-js2 ac-inf-ruby ac-html-bootstrap ac-html ac-clang 2048-game))
- '(podcaster-feeds-urls
-	 '("https://radt.nsupdate.info:8040/all.opml" "https://kernelpanic.fm/feed" "http://sachachua.com/blog/tag/emacs-chat/podcast") t)
+   '(splitjoin xah-elisp-mode xah-reformat-code egg-timer realgud-pry dap-mode linphone org-scrum graphql podcaster aurel impatient-showdown lispy flymd kivy-mode auctex ansible-vault ansible ansible-doc indium pallet cask-package-toolset caskxy cask-mode fm-bookmarks ob-mongo restclient-test elcord github-stars github-search github-explorer inf-clojure inf-crystal inf-ruby inf-mongo ibuffer-git ibuffer-project ibuffer-projectile ibuffer-vc ox-mediawiki mediawiki proc-net nginx-mode netease-music network-watch gnomenm eshell-bookmark autobookmarks 4clojure php-eldoc eldoc-eval php-boris magit-gitflow helm-phpunit lsp-go lsp-haskell lsp-php lsp-python lsp-rust lsp-typescript lsp-ui lsp-vue geiser cider elpy js-comint company-anaconda company-ansible company-auctex company-axiom company-bibtex company-box company-c-headers company-cabal company-childframe company-coq company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-ghc company-ghci company-glsl company-go company-irony-c-headers company-jedi company-lean company-lsp company-lua company-nand2tetris company-nginx company-ngram company-nixos-options company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-suggest company-tern company-terraform company-try-hard company-ycm company-ycmd aws-snippets clojure-snippets common-lisp-snippets django-snippets el-autoyas elixir-yasnippets elm-mode elm-yasnippets go-playground go-snippets haskell-snippets java-snippets mocha-snippets php-auto-yasnippets r-autoyas react-snippets vala-snippets yasnippet-classic-snippets julia-mode haxe-imports mingus download-region flycheck-kotlin flycheck kotlin-mode achievements multiple-cursors helm-rails helm-rb company-php jdee bicycle helm-dictionary keymap-utils emaps buffer-watcher graphql-mode sudo-ext dired-toggle-sudo auto-sudoedit counsel-tramp ibuffer-tramp composer emms-player-mpv emms-player-simple-mpv emms-bilibili ob-ipython symon avandu elf-mode elfeed-goodies elfeed-org elfeed-protocol elfeed-web gnus-x-gm-raw hexo json-navigator dsvn magit-svn eimp number elisp-docstring-mode elisp-format elisp-lint elisp-refs elisp-sandbox workgroups weibo typing-game tumble ttrss tree-mode travis top-mode todochiku timer-revert stem ssh show-marks seethru ruby-tools ruby-refactor ruby-guard ruby-end ruby-compilation ruby-block redis rebox2 quack python3-info python-info python popup-complete parenface pacmacs org-if openwith omniref nose newlisp-mode mongo memory-usage matrix-client marmalade-client kite-mini karma jsx-mode jst jss jquery-doc jinja2-mode jenkins-watch jasminejs-mode jabber-otr ipython inf-php inf-groovy helm-xcdoc helm-rubygems-org helm-rubygems-local helm-css-scss haxe-mode groovy-mode go-scratch gitlab gitignore-mode github-notifier github-issues github-clone github-browse-file gist gimme geben furl fold-dwim flymake-cursor flymake fireplace find-things-fast find-temp-file find-file-in-repository find-file-in-project feature-mode erlang eredis ensime emojify emacsshot emacsql-sqlite emacsql-psql emacsql-mysql emacs-eclim elwm elscreen-persist elnode elmine elixir-mode elixir-mix el-spec ecb drupal-mode dockerfile-mode docker-api docker docean docbook dired-open diffview dictionary dictcc dict-tree desktop-registry desktop+ dart-mode cssh crosshairs company-inf-ruby company-arduino coffee-mode cmake-mode clocker cljdoc clippy clang-format chm-view chinese-yasdcv camcorder c-eldoc bts-github bongo autotetris-mode autotest auto-yasnippet auto-compile audio-notes-mode arview aria2 apache-mode anything angularjs-mode angular-snippets angular-mode android-mode alert ack-menu ack ac-js2 ac-inf-ruby ac-html-bootstrap ac-html ac-clang 2048-game))
  '(proxy-mode-http-proxy "http://localhost:8123")
  '(py-indent-tabs-mode t)
  '(py-shebang-startstring "#!/usr/bin/env")
@@ -191,55 +186,55 @@
  '(volume-backend 'volume-amixer-backend)
  '(w3m-add-user-agent nil)
  '(w3m-content-type-alist
-	 '(("text/plain" "\\.\\(?:txt\\|tex\\|el\\)\\'" nil nil)
-		 ("text/html" "\\.s?html?\\'" browse-url-default-browser nil)
-		 ("text/sgml" "\\.sgml?\\'" nil "text/plain")
-		 ("text/xml" "\\.xml\\'" nil "text/plain")
-		 ("image/jpeg" "\\.jpe?g\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/png" "\\.png\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/gif" "\\.gif\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/tiff" "\\.tif?f\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/x-xwd" "\\.xwd\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/x-xbm" "\\.xbm\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/x-xpm" "\\.xpm\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("image/x-bmp" "\\.bmp\\'"
-			("/usr/bin/display" file)
-			nil)
-		 ("video/mpeg" "\\.mpe?g\\'"
-			("smplayer")
-			nil)
-		 ("video/quicktime" "\\.mov\\'" nil nil)
-		 ("application/dvi" "\\.dvi\\'"
-			("xdvi" file)
-			nil)
-		 ("application/postscript" "\\.e?ps\\'"
-			("gs" file)
-			nil)
-		 ("application/pdf" "\\.pdf\\'" nil nil)
-		 ("application/x-pdf" "\\.pdf\\'" nil nil)
-		 ("application/xml" "\\.xml\\'" nil w3m-detect-xml-type)
-		 ("application/rdf+xml" "\\.rdf\\'" nil "text/plain")
-		 ("application/rss+xml" "\\.rss\\'" nil "text/plain")
-		 ("application/xhtml+xml" nil nil "text/html")))
+   '(("text/plain" "\\.\\(?:txt\\|tex\\|el\\)\\'" nil nil)
+     ("text/html" "\\.s?html?\\'" browse-url-default-browser nil)
+     ("text/sgml" "\\.sgml?\\'" nil "text/plain")
+     ("text/xml" "\\.xml\\'" nil "text/plain")
+     ("image/jpeg" "\\.jpe?g\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/png" "\\.png\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/gif" "\\.gif\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/tiff" "\\.tif?f\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/x-xwd" "\\.xwd\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/x-xbm" "\\.xbm\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/x-xpm" "\\.xpm\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("image/x-bmp" "\\.bmp\\'"
+      ("/usr/bin/display" file)
+      nil)
+     ("video/mpeg" "\\.mpe?g\\'"
+      ("smplayer")
+      nil)
+     ("video/quicktime" "\\.mov\\'" nil nil)
+     ("application/dvi" "\\.dvi\\'"
+      ("xdvi" file)
+      nil)
+     ("application/postscript" "\\.e?ps\\'"
+      ("gs" file)
+      nil)
+     ("application/pdf" "\\.pdf\\'" nil nil)
+     ("application/x-pdf" "\\.pdf\\'" nil nil)
+     ("application/xml" "\\.xml\\'" nil w3m-detect-xml-type)
+     ("application/rdf+xml" "\\.rdf\\'" nil "text/plain")
+     ("application/rss+xml" "\\.rss\\'" nil "text/plain")
+     ("application/xhtml+xml" nil nil "text/html")))
  '(w3m-use-cookies t)
  '(workgroups-mode t)
  '(yas-global-mode nil)
  '(yas-snippet-dirs
-	 '("~/.emacs.d/snippets" "~/.emacs.d/elpa/mocha-snippets-20190417.1931/snippets" "~/.emacs.d/elpa/angular-snippets-20140514.523/snippets" yasnippet-classic-snippets-dir "~/.emacs.d/elpa/vala-snippets-20150429.352/snippets" "~/.emacs.d/elpa/react-snippets-20181002.1046/snippets" "~/.emacs.d/elpa/nand2tetris-20171201.1813/snippets" "~/.emacs.d/elpa/java-snippets-20160627.252/snippets" "~/.emacs.d/elpa/haskell-snippets-20160919.22/snippets" "~/.emacs.d/elpa/go-snippets-20180113.611/snippets" "~/.emacs.d/elpa/elm-yasnippets-20160401.524/snippets" "~/.emacs.d/elpa/common-lisp-snippets-20180226.1523/snippets" "~/.emacs.d/elpa/clojure-snippets-20180314.1308/snippets")))
+   '("~/.emacs.d/snippets" "~/.emacs.d/elpa/mocha-snippets-20190417.1931/snippets" "~/.emacs.d/elpa/angular-snippets-20140514.523/snippets" yasnippet-classic-snippets-dir "~/.emacs.d/elpa/vala-snippets-20150429.352/snippets" "~/.emacs.d/elpa/react-snippets-20181002.1046/snippets" "~/.emacs.d/elpa/nand2tetris-20171201.1813/snippets" "~/.emacs.d/elpa/java-snippets-20160627.252/snippets" "~/.emacs.d/elpa/haskell-snippets-20160919.22/snippets" "~/.emacs.d/elpa/go-snippets-20180113.611/snippets" "~/.emacs.d/elpa/elm-yasnippets-20160401.524/snippets" "~/.emacs.d/elpa/common-lisp-snippets-20180226.1523/snippets" "~/.emacs.d/elpa/clojure-snippets-20180314.1308/snippets")))
 
 
 (custom-set-faces
