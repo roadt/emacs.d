@@ -47,10 +47,10 @@ react-snippets realgud realgud-pry rebox2 redis request request-deferred
 restclient restclient-test revive ruby-block ruby-compilation ruby-end
 ruby-guard ruby-refactor ruby-tools rust-mode s sbt-mode scala-mode seethru
 seq shadchen show-marks shut-up simple-httpd skewer-mode solidity-mode
-sourcekit spaceline spinner splitter srv ssh stem sudo-ext swiper symon
-tern test-simple timer-revert todochiku top-mode tramp transient travis
-tree-mode treemacs treepy ttrss tumble typescript-mode typing-game use-proxy
-vala-snippets vline web web-completion-data websocket weibo widget-mvc
-with-editor workgroups workgroups2 xah-elisp-mode xah-reformat-code xr
-xref yaml-mode yasnippet yasnippet-classic-snippets yaxception ycm ycmd
-zoutline)
+sourcekit spaceline spinner splitjoin splitter srv ssh stem sudo-ext swiper
+symon tern test-simple timer-revert todochiku top-mode tramp transient
+travis tree-mode treemacs treepy ttrss tumble typescript-mode typing-game
+use-proxy vala-snippets virtualenv virtualenvwrapper vline web web-completion-data
+websocket weibo widget-mvc with-editor workgroups workgroups2 xah-elisp-mode
+xah-reformat-code xr xref yaml-mode yasnippet yasnippet-classic-snippets
+yaxception ycm ycmd zoutline)
