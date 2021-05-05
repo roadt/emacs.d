@@ -14,10 +14,10 @@ company-shell company-solidity company-sourcekit company-tern company-ycm
 company-ycmd concurrent counsel crosshairs crystal-mode cssh csv-mode ct
 ctable dap-mode dash dash-functional deferred desktop+ desktop-registry
 diffview dired-hacks-utils dired-open discover discover-my-major django-snippets
-docbook docean docker-api dsvn ecb eclim edbi egg-timer eglot eimp el-autoyas
-el-spec eldoc elf-mode elfeed elfeed-goodies elfeed-org elisp-docstring-mode
-elisp-format elisp-sandbox elixir-mix elixir-yasnippets elm-yasnippets
-elpa-audit elpa-clone elpa-deploy elpa-mirror elscreen elscreen-persist
+docbook docean docker-api dockerfile-mode dsvn ecb eclim edbi egg-timer
+eglot eimp el-autoyas el-spec eldoc elf-mode elfeed elfeed-goodies elfeed-org
+elisp-docstring-mode elisp-format elisp-sandbox elixir-mix elixir-yasnippets
+elm-yasnippets elpa-audit elpa-clone elpa-deploy elpa-mirror elscreen elscreen-persist
 elwm emacs-eclim emacsql emacsql-mysql emacsql-psql emacsql-sqlite emms
 emms-bilibili emms-player-mpv emms-player-simple-mpv ensime epc epkg epl
 epm eredis erlang eshell-bookmark ess evil exec-path-from-shell f find-file-in-repository
@@ -30,27 +30,27 @@ helm-phpunit helm-rails helm-rb helm-rubygems-local helm-rubygems-org helm-xcdoc
 hl-line+ hsluv ht htmlize http-post-simple hydra ibuffer-tramp iedit impatient-mode
 impatient-showdown inf-crystal inf-groovy inf-mongo inf-php inf-ruby inflections
 ipython irony ivy ivy-erlang-complete jabber jabber-otr jasminejs-mode
-java-snippets jenkins-watch jquery-doc js2-mode jsonrpc jss jst jsx-mode
-karma keyfreq kite-mini kivy-mode know-your-http-well kubel-evil kv lean-mode
-let-alist libmpdee linphone lispy load-relative loc-changes log4e logito
-lsp-go lsp-mode lsp-php lsp-python lsp-rust lsp-treemacs lsp-typescript
-lsp-ui lsp-vue lua-mode lv mag-menu magit magit-gerrit magit-gitflow magit-popup
-makey markdown-mode marmalade-client marshal matrix-client memory-usage
-mingus mocha-snippets mongo names nand2tetris network-watch newlisp-mode
-nginx-mode nixos-options noflet nose ob-ipython ob-mongo omniref openwith
-org org-if org-scrum ox-mediawiki package-build pacmacs pallet parenface
-pcache pfuture php-auto-yasnippets php-boris php-eldoc php-mode phpunit
-pkg-info pkgbuild-mode podcaster pollen-mode popup popup-complete popwin
-pos-tip posframe powerline proc-net project projectile proxy-mode pyim
-pyim-basedict python python-info python3-info qml-mode quack r-autoyas
-react-snippets realgud realgud-pry rebox2 redis request request-deferred
-restclient restclient-test revive ruby-block ruby-compilation ruby-end
-ruby-guard ruby-refactor ruby-tools rust-mode s sbt-mode scala-mode seethru
-seq shadchen show-marks shut-up simple-httpd skewer-mode solidity-mode
+java-snippets jedi jedi-core jenkins-watch jquery-doc js2-mode jss jst
+jsx-mode karma keyfreq kite-mini kivy-mode know-your-http-well kubel kubel-evil
+kv lean-mode let-alist libmpdee linphone lispy load-relative loc-changes
+log4e logito lsp-go lsp-jedi lsp-mode lsp-php lsp-python lsp-rust lsp-treemacs
+lsp-typescript lsp-ui lsp-vue lua-mode lv mag-menu magit magit-gerrit magit-gitflow
+magit-popup makey markdown-mode marmalade-client marshal matrix-client
+memory-usage mingus mocha-snippets mongo names nand2tetris network-watch
+newlisp-mode nginx-mode nixos-options noflet nose ob-ipython ob-mongo omniref
+openwith org org-if org-scrum ox-mediawiki package-build pacmacs pallet
+parenface pcache pfuture php-auto-yasnippets php-boris php-eldoc php-mode
+phpunit pkg-info pkgbuild-mode podcaster pollen-mode popup popup-complete
+popwin pos-tip posframe powerline proc-net project projectile proxy-mode
+pyim pyim-basedict python python-environment python-info python3-info qml-mode
+quack r-autoyas react-snippets realgud realgud-pry rebox2 redis request
+request-deferred restclient restclient-test revive ruby-block ruby-compilation
+ruby-end ruby-guard ruby-refactor ruby-tools rust-mode s sbt-mode scala-mode
+seethru seq shadchen show-marks shut-up simple-httpd skewer-mode solidity-mode
 sourcekit spaceline spinner splitjoin splitter srv ssh stem sudo-ext swiper
 symon tern test-simple timer-revert todochiku top-mode tramp transient
 travis tree-mode treemacs treepy ttrss tumble typescript-mode typing-game
 use-proxy vala-snippets virtualenv virtualenvwrapper vline web web-completion-data
 websocket weibo widget-mvc with-editor workgroups workgroups2 xah-elisp-mode
-xah-reformat-code xr xref yaml-mode yasnippet yasnippet-classic-snippets
-yaxception ycm ycmd zoutline)
+xah-reformat-code xr yaml-mode yasnippet yasnippet-classic-snippets yaxception
+ycm ycmd zoutline)
