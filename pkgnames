@@ -19,39 +19,39 @@ eglot eimp el-autoyas el-spec elcouch eldoc elf-mode elfeed elfeed-goodies
 elfeed-org elisp-docstring-mode elisp-format elisp-sandbox elixir-mix elixir-yasnippets
 elm-yasnippets elpa-audit elpa-clone elpa-deploy elpa-mirror elscreen elscreen-persist
 elwm emacs-eclim emacsql emacsql-mysql emacsql-psql emacsql-sqlite emms
-emms-bilibili emms-player-mpv emms-player-simple-mpv ensime epc epkg epl
-epm eredis erlang eshell-bookmark ess evil exec-path-from-shell f find-file-in-repository
-find-things-fast flx flycheck flymake flymake-cursor flymd fm fm-bookmarks
-fold-dwim fsm furl geben gh ghc ghub gimme gist git-commit github-browse-file
-github-issues github-notifier github-stars gitignore-mode gitlab gnomenm
-gntp gnus-x-gm-raw go-mode go-scratch go-snippets goto-chg graphql graphql-mode
-groovy-mode haskell-mode haskell-snippets haxe-imports helm helm-ag-r helm-core
-helm-phpunit helm-rails helm-rb helm-rubygems-local helm-rubygems-org helm-xcdoc
-hl-line+ hsluv ht htmlize http-post-simple hydra ibuffer-tramp iedit impatient-mode
-impatient-showdown inf-crystal inf-groovy inf-mongo inf-php inf-ruby inflections
-ipython irony ivy ivy-erlang-complete jabber jabber-otr jasminejs-mode
-java-snippets jedi jedi-core jenkins-watch jquery-doc js2-mode json-mode
-json-reformat json-snatcher jss jst jsx-mode karma keyfreq kite-mini kivy-mode
-know-your-http-well kubel kubel-evil kv lean-mode let-alist libelcouch
-libmpdee linphone lispy load-relative loc-changes log4e logito lsp-go lsp-jedi
-lsp-mode lsp-php lsp-python lsp-rust lsp-treemacs lsp-typescript lsp-ui
-lsp-vue lua-mode lv mag-menu magit magit-gerrit magit-gitflow magit-popup
-makey markdown-mode marmalade-client marshal matrix-client memory-usage
-mingus mocha-snippets mongo names nand2tetris navigel network-watch newlisp-mode
-nginx-mode nixos-options noflet nose ob-ipython ob-mongo omniref openwith
-org org-if org-scrum ox-mediawiki package-build pacmacs pallet parenface
-pcache pfuture php-auto-yasnippets php-boris php-eldoc php-mode phpunit
-pkg-info pkgbuild-mode podcaster pollen-mode popup popup-complete popwin
-pos-tip posframe powerline proc-net project projectile proxy-mode pyim
-pyim-basedict python python-environment python-info python3-info qml-mode
-quack r-autoyas react-snippets realgud realgud-pry rebox2 redis request
-request-deferred restclient restclient-test revive ruby-block ruby-compilation
-ruby-end ruby-guard ruby-refactor ruby-tools rust-mode s sbt-mode scala-mode
-seethru seq shadchen show-marks shut-up simple-httpd skewer-mode solidity-mode
-sourcekit spaceline spinner splitjoin splitter srv ssh stem sudo-ext swiper
-symon tablist tern test-simple timer-revert todochiku top-mode tramp transient
-travis tree-mode treemacs treepy ttrss tumble typescript-mode typing-game
-use-proxy vala-snippets virtualenv virtualenvwrapper vline web web-completion-data
-websocket weibo widget-mvc with-editor workgroups workgroups2 xah-elisp-mode
-xah-reformat-code xr yaml-mode yasnippet yasnippet-classic-snippets yaxception
-ycm ycmd zoutline)
+emms-bilibili emms-info-mediainfo emms-player-mpv emms-player-simple-mpv
+ensime epc epkg epl epm eredis erlang eshell-bookmark ess evil exec-path-from-shell
+f find-file-in-repository find-things-fast flx flycheck flymake flymake-cursor
+flymd fm fm-bookmarks fold-dwim fsm furl geben gh ghc ghub gimme gist git-commit
+github-browse-file github-issues github-notifier github-stars gitignore-mode
+gitlab gnomenm gntp gnus-x-gm-raw go-mode go-scratch go-snippets goto-chg
+graphql graphql-mode groovy-mode haskell-mode haskell-snippets haxe-imports
+helm helm-ag-r helm-core helm-emms helm-phpunit helm-rails helm-rb helm-rubygems-local
+helm-rubygems-org helm-xcdoc hl-line+ hsluv ht htmlize http-post-simple
+hydra ibuffer-tramp iedit impatient-mode impatient-showdown inf-crystal
+inf-groovy inf-mongo inf-php inf-ruby inflections ipython irony ivy ivy-erlang-complete
+jabber jabber-otr jasminejs-mode java-snippets jedi jedi-core jenkins-watch
+jq-format jquery-doc js2-mode json-mode json-reformat json-snatcher jss
+jst jsx-mode karma keyfreq kite-mini kivy-mode know-your-http-well kubel
+kubel-evil kv lean-mode let-alist libelcouch libmpdee linphone lispy load-relative
+loc-changes log4e logito lsp-go lsp-jedi lsp-mode lsp-php lsp-python lsp-rust
+lsp-treemacs lsp-typescript lsp-ui lsp-vue lua-mode lv mag-menu magit magit-gerrit
+magit-gitflow magit-popup makey markdown-mode marmalade-client marshal
+matrix-client memory-usage mingus mocha-snippets mongo names nand2tetris
+navigel network-watch newlisp-mode nginx-mode nixos-options noflet nose
+noxml-fold ob-ipython ob-mongo omniref openwith org org-if org-scrum ox-mediawiki
+package-build pacmacs pallet parenface pcache pfuture php-auto-yasnippets
+php-boris php-eldoc php-mode phpunit pkg-info pkgbuild-mode podcaster pollen-mode
+popup popup-complete popwin pos-tip posframe powerline proc-net project
+projectile proxy-mode pyim pyim-basedict python python-environment python-info
+python3-info qml-mode quack r-autoyas react-snippets realgud realgud-pry
+rebox2 redis reformatter relax request request-deferred restclient restclient-test
+revive ruby-block ruby-compilation ruby-end ruby-guard ruby-refactor ruby-tools
+rust-mode s sbt-mode scala-mode seethru seq shadchen show-marks shut-up
+simple-httpd skewer-mode solidity-mode sourcekit spaceline spinner splitjoin
+splitter srv ssh stem sudo-ext swiper symon tablist tern test-simple timer-revert
+todochiku top-mode tramp transient travis tree-mode treemacs treepy ttrss
+tumble typescript-mode typing-game use-proxy vala-snippets virtualenv virtualenvwrapper
+vline web web-completion-data websocket weibo widget-mvc with-editor workgroups
+workgroups2 xah-elisp-mode xah-reformat-code xml-format xmlgen xr yaml-mode
+yasnippet yasnippet-classic-snippets yaxception ycm ycmd zoutline)
