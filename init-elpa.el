@@ -1,4 +1,5 @@
 (require 'package)
+(setq package-check-signature nil)
 
 ;; initialize package mangement sysystem
 
@@ -12,14 +13,12 @@
    (quote
     (("gnu" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")
      ("melpa" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-     ("marmalade" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/marmalade/")
      ("org" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/"))))
 
 (setq elpa-ustc
    (quote
     (("gnu" . "https://mirrors.ustc.edu.cn/elpa/gnu/")
      ("melpa" . "https://mirrors.ustc.edu.cn/elpa/melpa/")
-     ("marmalade" . "https://mirrors.ustc.edu.cn/elpa/marmalade/")
      ("org" . "https://mirrors.ustc.edu.cn/elpa/org/"))))
 
 
@@ -27,7 +26,6 @@
    (quote
     (("gnu" . "http://elpa.emacs-china.org/gnu/")
      ("melpa" . " http://elpa.emacs-china.org/melpa/")
-     ("marmalade" . "http://elpa.emacs-china.org/marmalade/")
      ("org" . "http://elpa.emacs-china.org/org/"))))
 
 (setq elpa-local
@@ -36,7 +34,7 @@
      ("melpa" . "file:///mnt/ssd2/elpa/melpa/")
      ("org" . "file:///mnt/ssd2/elpa/org/"))))
 
-(setq package-archives    elpa-ustc)
+(setq package-archives    elpa-china)
 
 ;;(add-to-list 'package-archives             '("melpa" . "https://melpa.org/packages/") t)
 ;;(when (< emacs-major-version 24)
