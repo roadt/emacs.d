@@ -16,7 +16,6 @@
 (add-hook 'ruby-mode-hook
               '(lambda ()
                  (outline-minor-mode)
-								 (column-highlight-mode)
 		 (make-variable-buffer-local 'outline-regexp)
                  (setq outline-regexp
                        " *\\(def \\|class\\|module\\|describe \\|it \\)")
