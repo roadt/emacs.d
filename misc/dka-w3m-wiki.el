@@ -15,6 +15,8 @@
     ("gk" "https://www.google.com.hk/search?q=" "")
     ("h" "https://github.com/search?o=desc&s=stars&utf8=%E2%9C%93&q=")
 		("lathi" "http://www.lathi.net/twiki-bin/view/Main/" "WebHome")
+		("lathi" "http://www.lathi.net/twiki-bin/view/Main/" "WebHome")
+    ("n" "https://www.npmjs.com/search?q=" "")
 		("pip" "https://pypi.python.org/pypi?%3Aaction=search&term=%s&submit=search" "")
     ("rg" "https://rubygems.org/search?utf8=%E2%9C%93&query=" "")
 		("rfc" "https://tools.ietf.org/html/rfc" "/index")
