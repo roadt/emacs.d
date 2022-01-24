@@ -21,6 +21,7 @@
 		("py" "https://pypi.org/project/" "")
     ("gs" "https://rubygems.org/search?utf8=%E2%9C%93&query=" "")
     ("gm" "https://rubygems.org/gems/" "")
+    ("gp" "https://pkg.go.dev/search?q=" "")
 		("rfc" "https://tools.ietf.org/html/rfc" "/index")
 		("tk" "http://www.torrentkitty.me/search/%s/" "")
     ("w" "https://en.wikipedia.org/w/index.php?search=" "")
