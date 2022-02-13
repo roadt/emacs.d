@@ -17,6 +17,7 @@
 		("lathi" "http://www.lathi.net/twiki-bin/view/Main/" "WebHome")
 		("lathi" "http://www.lathi.net/twiki-bin/view/Main/" "WebHome")
     ("n" "https://www.npmjs.com/search?q=" "")
+    ("np" "https://www.npmjs.com/package/" "")
 		("p" "https://pypi.org/search/?q=" "")
 		("py" "https://pypi.org/project/" "")
     ("gs" "https://rubygems.org/search?utf8=%E2%9C%93&query=" "")
