@@ -71,19 +71,27 @@
 (defun available-package-names ()
   (mapcar 'car package-archive-contents))
 
+(defun tt-elisp-format (f)
+	(let (elisp-format-column 10)
+		(elisp-format-file f)
+		)
+)
+
 (defun tt-store-package-names()
   " store current installed packages into configure file   ~/.emacs.d/pkgnames"
   (interactive)
   (with-temp-file  "~/.emacs.d/pkgnames"
     (insert (with-output-to-string
       (princ (sort (installed-package-names) 'string<)))) 
+    (lisp-mode)
+	  (let ((elisp-format-column 10))
+		  (elisp-format-buffer))
     )
 )
 
 (defun tt-read-package-names()
   (car (read-from-string  (file-content "~/.emacs.d/pkgnames")))
-  )
-
+)
 
 (defun tt-ensure-packages-installed ()
   "ensure packages installed, if not,  install them "
