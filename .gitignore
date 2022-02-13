@@ -4,10 +4,15 @@
 *~
 *.~undo-tree
 
-#elpa
+#pkgs/elpa
 elpa/
 
-# 
+# config
+config-local/
+.custom.el
+
+# misc
 .*
 session.*
 tmp*
+
