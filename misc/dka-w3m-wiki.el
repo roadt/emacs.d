@@ -5,8 +5,8 @@
 (defvar dka-w3m-wikis
   '(
     ("aw" "https://wiki.archlinux.org/index.php?search=")
-    ("aur" "https://aur.archlinux.org/packages.php?SB=v&SO=d&K=" "")
-    ("aurn" "https://aur.archlinux.org/packages.php?SeB=n&SB=v&SO=d&K=" "")
+    ("aur" "https://aur.archlinux.org/packages?O=0&SB=v&SO=d&K=" "")
+    ("aurn" "https://aur.archlinux.org/packages?O=0&SeB=n&SB=v&SO=d&K=" "")
     ("b" "http://cn.bing.com/search?q=" "")
     ("d" "https://hub.docker.com/search/?q=" "")
     ("deb" "http://wiki.debian.net/" "")
