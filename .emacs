@@ -71,7 +71,7 @@
 ;;;
 ;;;  custom-set-variables
 ;;;
-(setq custom-file ".emacs.d/.custom.el")
+(setq custom-file "~/.emacs.d/.custom.el")
 (load-file custom-file)
 
 ;;;  Global Key Mapping
