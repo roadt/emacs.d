@@ -130,6 +130,7 @@
  elpa-clone
  elpa-deploy
  elpa-mirror
+ elpher
  elscreen
  elwm
  emacsql
@@ -294,6 +295,7 @@
  php-eldoc
  php-mode
  phpunit
+ picpocket
  pip-requirements
  pippel
  pkg-info
@@ -356,6 +358,7 @@
  subsonic
  sudo-ext
  swiper
+ sxiv
  symon
  tablist
  term+
@@ -375,6 +378,7 @@
  treeview
  ts-comint
  tumble
+ twittering-mode
  typescript-mode
  typing-game
  use-proxy
