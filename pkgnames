@@ -192,6 +192,8 @@
  helm-rb
  helm-rubygems-local
  helm-rubygems-org
+ helm-system-packages
+ helm-systemd
  helm-xcdoc
  hierarchy
  hsluv ht
@@ -215,6 +217,7 @@
  jedi
  jedi-core
  jenkins-watch
+ jest
  jq-format
  jq-mode
  jquery-doc
@@ -230,6 +233,7 @@
  keyfreq
  kite-mini
  kivy-mode
+ kiwix
  know-your-http-well
  kubel
  kubel-evil
@@ -275,6 +279,7 @@
  nixos-options
  noflet
  noxml-fold
+ npm
  ob-ipython
  ob-mongo
  openwith
