@@ -2,7 +2,6 @@
 ;;; You may also want to bind hide-body, hide-subtree, show-substree
 ;;; show-all, show-children, ... to some keys easy folding and unfolding
 
-
 (defun el-send-line ()
   "send the current line to the inferrior ruby process"
   (interactive)
@@ -22,6 +21,7 @@
 						 (hide-body)
 						 (local-set-key (kbd "C-c C-v") 'el-send-line)
 						 ))
+
 
 
 

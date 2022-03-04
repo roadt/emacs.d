@@ -14,8 +14,11 @@
 
 (defun read-only-ff-hook ()
   (let ((fn (buffer-file-name (current-buffer))))
-     (if (any (mapcar (lambda (x) (dired-in-this-tree fn  (expand-file-name x))) find-file-readonly-roots))
-         (read-only-mode))
+    (if (any (mapcar (lambda (x) (dired-in-this-tree fn  (expand-file-name x))) find-file-readonly-roots))
+        (read-only-mode))
     ))
 
 (add-hook 'find-file-hook  'read-only-ff-hook)
+
+
+

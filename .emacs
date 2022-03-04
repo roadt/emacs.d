@@ -118,10 +118,11 @@
 
 
 ;; load config
-(load-directory "~/.emacs.d/config/")
+(load-config-directory "~/.emacs.d/config/")
 
 ;; load config-local
-(load-directory "~/.emacs.d/config-local/")
+(load-config-directory "~/.emacs.d/config-local/")
+
 
 ;;
 (put 'erase-buffer 'disabled nil)
