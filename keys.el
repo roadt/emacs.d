@@ -42,8 +42,8 @@
 (global-set-key [(shift f11)] 'package-list-packages-no-fetch)
 
 (global-set-key [f12] 'gdb-step)
-(global-set-key [(shift f12)] '(lambda() (interactive) (find-file "~/.emacs.d/.emacs")))
-(global-set-key [(control f12)] '(lambda() (interactive) (load-file "~/.emacs.d/.emacs")))
+(global-set-key [(shift f12)] '(lambda() (interactive) (find-file "~/.emacs.d/init.el")))
+(global-set-key [(control f12)] '(lambda() (interactive) (load-file "~/.emacs.d/init.el")))
 
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 (global-set-key (kbd "C-c d") 'sdcv-search)
@@ -96,7 +96,8 @@
 ;(global-set-key (kbd "C-x C-f") 'projectile-find-file)
 
 ;; misc
-(global-set-key (kbd "s-d") 'delete-word)
-(global-set-key (kbd  "s-k") 'jpk/delete-line)
+(global-set-key (kbd "M-d") 'jpk/delete-word)
+(global-set-key (kbd "M-S-d") 'delete-word)
+(global-set-key (kbd  "M-S-k") 'jpk/delete-line)
 (global-set-key (kbd  "s-<backspace>") 'jpk/backward-delete-word)
 
