@@ -88,28 +88,6 @@
 ;;(load-library "cedet")
 
 
-
-(autoload 'php-mode "php-mode.el" "Php mode." t)
-(setq auto-mode-alist (append '(("/*.\.php[345]?$" . php-mode) ("/*.\.ctp$" . php-mode)) auto-mode-alist))
-
-(autoload 'pkgbuild-mode "pkgbuild-mode.el" "PKGBUILD mode." t)
-(setq auto-mode-alist (append '(("/PKGBUILD$" . pkgbuild-mode)) auto-mode-alist))
-
-(setq auto-mode-alist (append '(("/Rakefile$" . ruby-mode) ("/.*\.rake$" . ruby-mode)
-				("/Gemfile$" . ruby-mode) ("/.*\.gemspec$" . ruby-mode) ("/.*\.ctl$" . ruby-mode )) auto-mode-alist))
-
-(setq auto-mode-alist (append '(("/.*\.erl$" . erlang-mode)
-				) auto-mode-alist))
-
-
-(setq auto-mode-alist (append '(("/.*\.md$" . markdown-mode) ("/.*\.markdown$" . markdown-mode)) auto-mode-alist))
-
-;;;(load-library "yaml-mode")
-(setq auto-mode-alist (append '(("/.*\.yml$" . yaml-mode)) auto-mode-alist))
-(setq auto-mode-alist (append '(("\.jl$" . sawfish-mode)) auto-mode-alist))
-(setq auto-mode-alist (append '(("\.liquid$" . html-mode)) auto-mode-alist))
-(setq auto-mode-alist (append '(("\.pa$" . conf-mode)) auto-mode-alist))
-
 ;; ruby <-> elisp
 (load-file "~/.emacs.d/misc/relisp.el")
 (autoload 'relisp-start-slave "relisp" nil t)
@@ -145,4 +123,3 @@
 
 
 (workgroups-mode 1)
-(wg-switch-to-workgroup "wg0")

@@ -13,6 +13,12 @@
       (ruby-send-region (point) end)))
   (next-line))
 
+
+
+(setq auto-mode-alist (append '(("/Rakefile$" . ruby-mode) ("/.*\.rake$" . ruby-mode)
+				("/Gemfile$" . ruby-mode) ("/.*\.gemspec$" . ruby-mode) ("/.*\.ctl$" . ruby-mode )) auto-mode-alist))
+
+
 (add-hook 'ruby-mode-hook
               '(lambda ()
                  (outline-minor-mode)
@@ -23,8 +29,6 @@
 		 (local-set-key (kbd "C-c C-v") 'ruby-send-line)
 		 (local-set-key (kbd "C-c C-.") '(lambda () (interactive) (ruby-send-block) (ruby-end-of-block) (next-line)))
 		 ))
-
-(add-to-list 'auto-mode-alist '("\\.rake$" . ruby-mode))
 
 
 
