@@ -11,11 +11,19 @@
 
 
 ;;
-;; load config file,  only load if feature has already been loaded
+;; load config file,   load if feature has already been loaded,
+;; otherwise register eval-after-load
 ;;
+(defun make-loader (init-file)
+	(lexical-let ((f init-file))
+		(lambda () (load-file f))))
+
 (defun load-config-file (f)
-  (if (featurep  (intern (file-name-base f)))
-      (load-file f)))
+  (let ((bn (file-name-base f)))
+		(if (featurep (intern bn))
+				(load-file f)
+			(eval-after-load (intern bn) (make-loader f)))))
+
 
 ;;
 ;; load all config files under given directory
