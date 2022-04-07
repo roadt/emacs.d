@@ -20,7 +20,7 @@
 
 (defun load-config-file (f)
   (let ((bn (file-name-base f)))
-		(if (featurep (intern bn))
+		(if (require (intern bn) nil t)
 				(load-file f)
 			(eval-after-load (intern bn) (make-loader f)))))
 
