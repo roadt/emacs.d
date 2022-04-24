@@ -1,19 +1,19 @@
 (2048-game
  ac-clang
+ ac-etags
  ac-html
  ac-html-bootstrap
  ac-inf-ruby
  ac-js2
- ace-jump-mode
- ace-window
  achievements
  ack
  ack-menu
  alert
- android-mode
  angular-mode
  angular-snippets
+ anki-connect
  anki-mode
+ anki-vocabulary
  ansi
  ansible
  ansible-doc
@@ -23,6 +23,7 @@
  arduino-mode
  aria2
  arview
+ arxiv-mode
  async
  auctex
  audio-notes-mode
@@ -31,21 +32,23 @@
  autotest
  autotetris-mode
  avandu
- avy
  bash-completion
+ bats-mode
+ battle-haxe
  blox
  bongo bts
  bts-github
  buffer-watcher
  bui
  cabledolphin
+ calibredb
  camcorder
  cargo
  cask
  cask-mode
  cask-package-toolset
  caskxy
- cfrs
+ chinese-word-at-point
  chinese-yasdcv
  clippy
  clocker
@@ -58,6 +61,7 @@
  company
  company-arduino
  company-c-headers
+ company-ctags
  company-emacs-eclim
  company-erlang
  company-flow
@@ -87,24 +91,22 @@
  cssh
  csv-mode
  ct ctable
- dap-mode
  dash
  dash-functional
  deferred
  desktop+
  desktop-registry
- diffview
  dir-treeview
  dired-hacks-utils
  dired-open
  discover
  discover-my-major
+ disk-usage
  django-snippets
  djangonaut
  docbook
  docean
  docker-api
- dockerfile-mode
  dsvn ecb
  eclim
  edbi
@@ -119,7 +121,6 @@
  eldoc
  elf-mode
  elfeed
- elfeed-goodies
  elfeed-org
  elisp-docstring-mode
  elisp-format
@@ -130,24 +131,28 @@
  elpa-clone
  elpa-deploy
  elpa-mirror
- elpher
  elscreen
  elwm
  emacsql
+ emacsql-libsqlite3
  emacsql-mysql
  emacsql-psql
  emacsql-sqlite
+ emacsql-sqlite3
  emms
  emms-bilibili
  emms-info-mediainfo
  emms-player-simple-mpv
  enh-ruby-mode
+ enlive
  epc epkg
  epl epm
+ ereader
  eredis
  erlang
  eshell-bookmark
- ess evil
+ ess esxml
+ evil
  exec-path-from-shell
  f
  find-file-in-repository
@@ -177,12 +182,11 @@
  go-snippets
  goto-chg
  graphql
- graphql-mode
- graphviz-dot-mode
- groovy-mode
+ graphql-doc
  haskell-mode
  haskell-snippets
  haxe-imports
+ haxe-mode
  helm
  helm-ag-r
  helm-core
@@ -197,67 +201,54 @@
  helm-xcdoc
  hierarchy
  hsluv ht
+ html2org
  htmlize
  http-post-simple
  hydra
  ibuffer-tramp
- iedit
+ image+
  impatient-mode
  impatient-showdown
  inf-crystal
  inf-mongo
  inf-ruby
  inflections
- irony ivy
+ irony
+ itail ivy
  ivy-erlang-complete
+ ivy-explorer
  jabber
  jabber-otr
  jasminejs-mode
  java-snippets
- jedi
- jedi-core
  jenkins-watch
- jest
- jq-format
- jq-mode
  jquery-doc
  js2-mode
  json-mode
  json-navigator
- json-reformat
  json-snatcher
  jsonrpc
  jss jst
- jupyter
  karma
  keyfreq
  kite-mini
  kivy-mode
  kiwix
  know-your-http-well
- kubel
- kubel-evil
  kv
  lean-mode
  libelcouch
  libmpdee
  linphone
- lispy
  load-relative
  loc-changes
  log4e
  logito
- lsp-jedi
  lsp-mode
- lsp-treemacs
- lsp-ui
  lua-mode
- lv lxc
- lxc-tramp
- lxd-tramp
+ lv
  mag-menu
  magit
- magit-gerrit
  magit-gitflow
  magit-popup
  magit-section
@@ -267,6 +258,7 @@
  marshal
  memory-usage
  mingus
+ minimal-session-saver
  mmm-mode
  mocha-snippets
  mongo
@@ -277,49 +269,45 @@
  newlisp-mode
  nginx-mode
  nixos-options
- noflet
- noxml-fold
- npm
+ ob-http
  ob-ipython
  ob-mongo
+ ob-sql-mode
  openwith
+ org-anki
+ org-brain
  org-d20
  org-if
+ org-pomodoro
+ org-roam
  org-scrum
  origami
  ox-mediawiki
+ ox-reveal
  package-build
- pacmacs
  pallet
  paredit
  pcache
  peertube
- persistent-scratch
- pfuture
  php-boris
  php-eldoc
- php-mode
  phpunit
  picpocket
  pip-requirements
- pippel
  pkg-info
  pkgbuild-mode
  podcaster
  pollen-mode
  popup
  popup-complete
- popwin
  pos-tip
- posframe
  powerline
+ prefab
  proc-net
  project
  projectile
- proxy-mode
+ promise
  pyim
- pyim-basedict
- python-environment
  python-info
  pythonic
  qml-mode
@@ -329,25 +317,27 @@
  read-aloud
  realgud
  realgud-pry
+ reazon
  rebox2
+ recover-buffers
  redis
  reformatter
+ renpy
  request
  request-deferred
  restclient
- restclient-helm
  restclient-test
+ rfc-mode
  ruby-compilation
  ruby-end
  ruby-refactor
  ruby-tools
- rust-mode
- s
- sbt-mode
- scala-mode
+ s sdcv
  seethru
+ seq
  sesman
  shadchen
+ showtip
  shut-up
  simple-httpd
  skewer-mode
@@ -357,6 +347,7 @@
  spinner
  splitjoin
  splitter
+ sqlite3
  srv
  ssass-mode
  ssh stem
@@ -367,30 +358,23 @@
  symon
  tablist
  term+
- tern
  test-simple
- tide
  timer-revert
  tramp
- tramp-auto-auth
- tramp-term
  transient
  transmission
  travis
+ tree-edit
  tree-mode
- treemacs
+ tree-sitter
+ tree-sitter-langs
  treepy
  treeview
- ts-comint
+ tsc
  tumble
  twittering-mode
- typescript-mode
  typing-game
- use-proxy
  vala-snippets
- virtualenv
- virtualenvwrapper
- vline
  volume
  vue-html-mode
  vue-mode
@@ -400,17 +384,14 @@
  weibo
  widget-mvc
  with-editor
- workgroups
  workgroups2
  xah-elisp-mode
  xah-reformat-code
- xml-format
- xmlgen xr
+ xml+ xr
  xref
  yaml-mode
  yasnippet
  yasnippet-classic-snippets
  yaxception
  ycm ycmd
- zmq
- zoutline)
+ youdao-dictionary)
