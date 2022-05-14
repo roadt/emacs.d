@@ -157,3 +157,28 @@ With argument ARG, do this that many times."
   (interactive "p")
   (delete-region (point) (progn (forward-word arg) (point))))
 
+
+
+(defun tt-kill-buffers ()
+  "tt - kill unimportant buffers in order to save "
+  (interactive)
+  (let ()
+(kill-all-file-buffers)
+))
+
+
+(defun tt-save-desktop ()
+  "tt - save desktops"
+  (interactive)
+  (let ((desktop-name "default"))
+		(desktop+-create desktop-name)))
+
+
+
+(defun tt-load-desktop ()
+  "tt - load desktops"
+  (interactive)
+  (let ((desktop-name "default"))
+(desktop+-load desktop-name)
+ ))
+
