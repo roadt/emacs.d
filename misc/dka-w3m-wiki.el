@@ -25,6 +25,7 @@
     ("gp" "https://pkg.go.dev/search?q=" "")
 		("rfc" "https://tools.ietf.org/html/rfc" "/index")
 		("tk" "http://www.torrentkitty.me/search/%s/" "")
+		("u" "https://ubuntu.com/search?q=" "")
     ("w" "https://en.wikipedia.org/w/index.php?search=" "")
     ("wm" "https://en.m.wikipedia.org/w/index.php?search=" "")
 ))
