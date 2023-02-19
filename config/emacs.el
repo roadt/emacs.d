@@ -11,3 +11,7 @@
 (setq auto-mode-alist (append '(("\.liquid$" . html-mode)) auto-mode-alist))
 (setq auto-mode-alist (append '(("\.pa$" . conf-mode)) auto-mode-alist))
 
+
+
+;; quick decision
+ (defalias 'yes-or-no-p 'y-or-n-p)
