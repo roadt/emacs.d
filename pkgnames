@@ -29,12 +29,14 @@
  audio-notes-mode
  aurel
  auto-complete
+ auto-sudoedit
  autotest
  autotetris-mode
  avandu
  bash-completion
  bats-mode
  battle-haxe
+ bing-dict
  blox
  bongo bts
  bts-github
@@ -85,6 +87,7 @@
  company-sourcekit
  company-ycm
  company-ycmd
+ compat
  concurrent
  counsel
  crystal-mode
@@ -107,6 +110,7 @@
  docbook
  docean
  docker-api
+ dockerfile-mode
  dsvn ecb
  eclim
  edbi
@@ -133,6 +137,7 @@
  elpa-mirror
  elscreen
  elwm
+ emacsc
  emacsql
  emacsql-libsqlite3
  emacsql-mysql
@@ -161,6 +166,8 @@
  flycheck
  flymake
  flymake-cursor
+ flymake-easy
+ flymake-python-pyflakes
  flymd
  fm-bookmarks
  fold-dwim
@@ -222,6 +229,7 @@
  jasminejs-mode
  java-snippets
  jenkins-watch
+ jq-mode
  jquery-doc
  js2-mode
  json-mode
@@ -262,6 +270,7 @@
  mmm-mode
  mocha-snippets
  mongo
+ nadvice
  names
  nand2tetris
  navigel
@@ -274,6 +283,7 @@
  ob-mongo
  ob-sql-mode
  openwith
+ org
  org-anki
  org-brain
  org-d20
@@ -291,6 +301,7 @@
  peertube
  php-boris
  php-eldoc
+ php-mode
  phpunit
  picpocket
  pip-requirements
@@ -308,10 +319,14 @@
  projectile
  promise
  pyim
+ python-black
  python-info
+ python-mode
  pythonic
  qml-mode
  quack
+ quickrun
+ quiet
  r-autoyas
  react-snippets
  read-aloud
@@ -326,8 +341,10 @@
  request
  request-deferred
  restclient
+ restclient-jq
  restclient-test
  rfc-mode
+ rjsx-mode
  ruby-compilation
  ruby-end
  ruby-refactor
@@ -370,15 +387,16 @@
  tree-sitter-langs
  treepy
  treeview
- tsc
+ tsc tss
  tumble
  twittering-mode
+ typescript-mode
  typing-game
  vala-snippets
  volume
  vue-html-mode
  vue-mode
- web
+ w3m web
  web-completion-data
  websocket
  weibo
