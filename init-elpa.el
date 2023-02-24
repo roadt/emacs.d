@@ -24,9 +24,9 @@
 
 (setq elpa-china
    (quote
-    (("gnu" . "http://elpa.emacs-china.org/gnu/")
-     ("melpa" . " http://elpa.emacs-china.org/melpa/")
-     ("org" . "http://elpa.emacs-china.org/org/"))))
+    (("gnu" . "http://1.15.88.122/gnu/")
+     ("melpa" . "http://1.15.88.122/melpa/")
+     ("org" . "http://1.15.88.122/org/"))))
 
 (setq elpa-local
    (quote
