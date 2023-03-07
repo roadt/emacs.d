@@ -307,6 +307,7 @@
  pip-requirements
  pkg-info
  pkgbuild-mode
+ plantuml-mode
  podcaster
  pollen-mode
  popup
