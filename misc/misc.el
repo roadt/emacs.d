@@ -43,6 +43,16 @@
 	    (buffer-file-name (current-buffer)))
    'grep-mode)
   )
+
+(defun grep-current-buffer-ex (reg) 
+  (interactive (list (read-shell-command "grep-current-buffer  (grep regex):" grep-buffer-args)))
+  (setq grep-buffer-args reg)
+  (compilation-start 
+   (concat  "grep -P  " reg  " "
+	    (buffer-file-name (current-buffer)))
+   'grep-mode)
+  )
+
 (add-hook 'grep-mode-hook 
 		  (lambda () (toggle-truncate-lines t)))
 
